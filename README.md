@@ -2,6 +2,8 @@
 educational app that teaches kids python functions
 # Python Quest
 
+![Dinosaur mascot](dinosaur.png)
+
 Down the rabbit hole I went: I sat down to get familiar with Claude Code, and somehow ended up building an app for Raspberry Pi. The code was generated with Claude's help.
 
 Python Quest is a small, interactive app that teaches kids the basics of Python through a friendly, touchscreen-style interface. It's built with [Pygame](https://www.pygame.org/) and sized for a Raspberry Pi touchscreen (480×320), though it runs fine on a regular desktop too.
