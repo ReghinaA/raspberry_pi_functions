@@ -2,7 +2,7 @@
 educational app that teaches kids python functions
 # Python Quest
 
-![Dinosaur mascot](dinosaur.png)
+<img src="dinosaur.png" width="70">
 
 Down the rabbit hole I went: I sat down to get familiar with Claude Code, and somehow ended up building an app for Raspberry Pi. The code was generated with Claude's help.
 
