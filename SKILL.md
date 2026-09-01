@@ -59,6 +59,6 @@ Use this skill when making changes to existing code in any project.
 - Document your changes
 
 ## The Rule
-**"Уже написанный код не ломаем!"** (Don't break existing code!)
+**"Don't break existing code!"**
 
-This is the first rule of development. Every change should preserve existing functionality while adding or fixing features.
+Every change should preserve existing functionality while adding or fixing features.
