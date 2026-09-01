@@ -63,6 +63,6 @@ The workflow returns:
 
 ## The Principle
 
-**"Уже написанный код не ломаем!" (Don't break existing code!)**
+**Don't break existing code!**
 
 This workflow enforces it through automation - before you can make changes, you get a detailed safety verification that prevents mistakes.
