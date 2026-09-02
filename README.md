@@ -15,7 +15,7 @@ Python Quest is a small, interactive app that teaches kids the basics of Python 
 
 - **Welcome screen** with a short introduction and a dinosaur mascot.
 - **Lesson 1 — Functions**: explains what a function is, then lets kids click buttons to see real function code side-by-side with plain-English explanations, and run the code to see the result.
-- **Lesson 2 — Guess the Output**: a quiz where kids read a short snippet of Python and pick what they think it will print, with instant right/wrong feedback.
+- **Guess the Output**: a quiz where kids read a short snippet of Python and pick what they think it will print, with instant right/wrong feedback.
 
 ## Credits
 
