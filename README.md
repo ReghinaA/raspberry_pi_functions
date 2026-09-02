@@ -1,8 +1,9 @@
 # raspberry_pi_functions
 educational app that teaches kids python functions
 
-<img src="birchtree1113-Sharable-Profile)-Horizontal.jpg" width="70">
-https://ko-fi.com/birchtree1113
+<a href="https://ko-fi.com/birchtree1113">
+  <img src="birchtree1113-Sharable-Profile)-Horizontal.jpg" width="200">
+</a>
 
 # Python Quest <img src="dinosaur.png" width="70">
 
