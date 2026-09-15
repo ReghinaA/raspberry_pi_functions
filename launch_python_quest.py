@@ -19,10 +19,10 @@ GAME_HEIGHT = int(SCREEN_HEIGHT * SCALE)  # 600
 OFFSET_X = (REAL_WIDTH - GAME_WIDTH) // 2  # side margins (pillarboxing)
 OFFSET_Y = (REAL_HEIGHT - GAME_HEIGHT) // 2
 
-# Переключатель полноэкранного режима:
-#   True  - fullscreen на 1024x600, как будет на настоящем Raspberry Pi мониторе
-#   False - обычное окно 1024x600 для разработки/тестов на ноутбуке
-#           (скриншоты работают, окно можно свернуть)
+# Fullscreen switch:
+#   True  - fullscreen 1024x600, same as real Raspberry Pi monitor
+#   False - normal window 1024x600 for development on laptop
+#           (can take screenshots and close window)
 FULLSCREEN = False
 
 display_flags = pygame.FULLSCREEN if FULLSCREEN else 0
