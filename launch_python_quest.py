@@ -10,23 +10,30 @@ SCREEN_WIDTH = 480
 SCREEN_HEIGHT = 320
 screen = pygame.Surface((SCREEN_WIDTH, SCREEN_HEIGHT))
 
-# Real Raspberry Pi monitor resolution
-REAL_WIDTH = 1024
-REAL_HEIGHT = 600
-SCALE = 1.875  # max scale that fits 320px height into 600px (320 * 1.875 = 600)
-GAME_WIDTH = int(SCREEN_WIDTH * SCALE)    # 900
-GAME_HEIGHT = int(SCREEN_HEIGHT * SCALE)  # 600
+# Fullscreen toggle:
+#   True  - fullscreen at the real Raspberry Pi monitor's resolution
+#   False - regular 1024x600 window for development/testing on a laptop
+#           (screenshots work, window can be minimized)
+FULLSCREEN = True
+
+if FULLSCREEN:
+    # (0, 0) here means "use whatever resolution the screen is actually
+    # running at" - hardcoding 1024x600 can silently fail to fill the
+    # screen if the real monitor isn't running in exactly that mode
+    real_screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+else:
+    real_screen = pygame.display.set_mode((1024, 600))
+
+REAL_WIDTH, REAL_HEIGHT = real_screen.get_size()
+
+# Scale the virtual 480x320 canvas up as much as possible while still
+# fitting inside the real screen and keeping its proportions
+SCALE = min(REAL_WIDTH / SCREEN_WIDTH, REAL_HEIGHT / SCREEN_HEIGHT)
+GAME_WIDTH = int(SCREEN_WIDTH * SCALE)
+GAME_HEIGHT = int(SCREEN_HEIGHT * SCALE)
 OFFSET_X = (REAL_WIDTH - GAME_WIDTH) // 2  # side margins (pillarboxing)
 OFFSET_Y = (REAL_HEIGHT - GAME_HEIGHT) // 2
 
-# Fullscreen switch:
-#   True  - fullscreen 1024x600, same as real Raspberry Pi monitor
-#   False - normal window 1024x600 for development on laptop
-#           (can take screenshots and close window)
-FULLSCREEN = True
-
-display_flags = pygame.FULLSCREEN if FULLSCREEN else 0
-real_screen = pygame.display.set_mode((REAL_WIDTH, REAL_HEIGHT), display_flags)
 LETTERBOX_COLOR = (30, 30, 30)
 
 # Small "X" exit button, drawn in the left letterbox margin (real-screen
