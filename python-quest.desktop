@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Python Quest
+Comment=Learn Python with a friendly dinosaur
+Exec=/home/pegatrix/Desktop/raspberry_pi_functions-main/dist/PythonQuest/PythonQuest
+Icon=/home/pegatrix/Desktop/raspberry_pi_functions-main/dist/PythonQuest/python_quest_icon.png
+Terminal=false
+Categories=Education;
