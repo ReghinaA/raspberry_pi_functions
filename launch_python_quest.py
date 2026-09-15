@@ -23,7 +23,7 @@ OFFSET_Y = (REAL_HEIGHT - GAME_HEIGHT) // 2
 #   True  - fullscreen 1024x600, same as real Raspberry Pi monitor
 #   False - normal window 1024x600 for development on laptop
 #           (can take screenshots and close window)
-FULLSCREEN = False
+FULLSCREEN = True
 
 display_flags = pygame.FULLSCREEN if FULLSCREEN else 0
 real_screen = pygame.display.set_mode((REAL_WIDTH, REAL_HEIGHT), display_flags)
