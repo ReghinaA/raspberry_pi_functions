@@ -23,6 +23,13 @@ Developed by BirchTree
 
 Dinosaur image credit — ArtsyBeeKids
 
+## Display compatibility
+
+Python Quest automatically adapts to whatever screen it's running on. Instead of assuming a fixed screen size, the app draws everything on a small internal canvas first, then scales that canvas up (or down) to fit the real screen — as large as possible while keeping everything in the correct proportions, so nothing looks stretched or squashed.
+
+Works on any resolution. Whether it's a small 7" touchscreen, a laptop display, or a larger monitor, the app detects the actual screen size at startup and fits itself to it automatically — no configuration needed.
+No distortion. If the screen's proportions don't exactly match the app's design, you'll see a thin plain-colored margin on the sides (or top/bottom) instead of a stretched, blurry picture.
+Fullscreen or windowed. The app can run fullscreen (recommended for a dedicated device like a Raspberry Pi kiosk) or in a regular resizable window (handy for testing on a laptop).
 
 ## Requirements
 
